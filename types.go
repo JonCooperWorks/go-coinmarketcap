@@ -15,6 +15,8 @@ type Coin struct {
 	PercentChange1h  float64 `json:"percent_change_1h,string"`
 	PercentChange24h float64 `json:"percent_change_24h,string"`
 	PercentChange7d  float64 `json:"percent_change_7d,string"`
+	PriceEur         float64 `json:"price_eur,string"`
+	PriceGbp         float64 `json:"price_gbp,string"`
 	LastUpdated      string  `json:"last_updated"`
 }
 
