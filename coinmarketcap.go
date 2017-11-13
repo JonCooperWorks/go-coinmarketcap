@@ -47,7 +47,7 @@ func GetCoinData(coin string) (Coin, error) {
 
 // Get information about all coins listed in Coin Market Cap.
 func GetAllCoinData(convert string) (map[string]Coin, error) {
-	url = fmt.Sprintf("%s/ticker/?convert=%s", baseUrl, convert)
+	url = fmt.Sprintf("%s/ticker/?convert=%s&limit=0", baseUrl, convert)
 
 	fmt.Printf("Sending request to %s\n", url)
 	resp, err := makeReq(url)
